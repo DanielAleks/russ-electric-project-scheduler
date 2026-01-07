@@ -1,10 +1,14 @@
-import type { RouteRecordRaw } from 'vue-router';
-
-const routes: RouteRecordRaw[] = [
+const routes = [
   {
     path: '/',
     component: () => import('layouts/MainLayout.vue'),
-    children: [{ path: '', component: () => import('pages/IndexPage.vue') }],
+    children: [
+      { path: '/', component: () => import('pages/IndexPage.vue') },
+      { path: '/inventory', component: () => import('pages/InventoryOverview.vue') },
+      { path: '/inventory/details', component: () => import('pages/InventoryDetails.vue') },
+      { path: '/daily-equipment', component: () => import('pages/DailyEquipment.vue') },
+      { path: '/upload-receipts', component: () => import('pages/UploadReceipts.vue') },
+    ],
   },
 
   // Always leave this as last one,

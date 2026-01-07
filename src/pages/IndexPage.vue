@@ -5,7 +5,8 @@
       active
       :todos="todos"
       :meta="meta"
-    ></example-component>
+    ></example-component
+    >TEST DANIEL
   </q-page>
 </template>
 
