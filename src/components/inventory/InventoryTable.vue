@@ -45,7 +45,6 @@ export default defineComponent({
         name: 'name',
         required: true,
         label: 'Dessert (100g serving)',
-        // field: (row) => row.name,
         field: 'name',
         align: 'left',
       },
